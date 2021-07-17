@@ -1,4 +1,5 @@
-// Finding a Number wheather it is Prime or Not
+// Finding a Number wheather it is Prime or Not okay 
+// This is modified code
 
 #include<iostream>
 #include<cmath>
