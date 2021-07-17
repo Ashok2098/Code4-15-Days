@@ -52,5 +52,5 @@ int main(){
 	if(sum==n)
 		cout<<"Armstrong Number";
 	else
-		cout<<"Not Armstrong Number";
+		cout<<"Not Armstrong Number!";
 }
