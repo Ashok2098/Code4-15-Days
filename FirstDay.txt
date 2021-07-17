@@ -32,7 +32,7 @@ int main(){
 		rev = rev*10 + rem;
 		n/=10;
 	}
-	cout<<rev<<endl;
+	cout<<rev<<endl; // This is to print value
 }
 
 // Armstrong Number
