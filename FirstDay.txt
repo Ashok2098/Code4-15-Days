@@ -1,0 +1,56 @@
+// Finding a Number wheather it is Prime or Not
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+	int n,i,f=0;
+	cin>>n;
+	for(i=2;i<sqrt(n);i++){  // sqrt(n) reduces the complexity of the program here
+		íf(n%i==0){
+			cout<<"Not a Prime Number";
+			f=1;
+			break;
+		}
+	}	
+	if(f==0)
+		cout<<"Prime Number";
+}
+
+
+// Reverse of a Number
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+	int n,i,rev=0,rem;
+	cin>>n;
+	while(n>0){
+		rem = rem%10;
+		rev = rev*10 + rem;
+		n/=10;
+	}
+	cout<<rev<<endl;
+}
+
+// Armstrong Number
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+	int n,rem;
+	cin>>n;
+	int x=n;
+	int sum=0;
+	while(x>0){
+		rem = x%10;
+		sum+=pow(rem,3);  // Logic is every digit raise to the power 3 should be added and sum up to given number.
+		x/=10;
+	}
+	if(sum==n)
+		cout<<"Armstrong Number";
+	else
+		cout<<"Not Armstrong Number";
+}
